@@ -64,7 +64,7 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/" element={<WebDevPortfolioPage />} />
+          <Route path="/web-dev-portfolio" element={<WebDevPortfolioPage />} />
           <Route path="/data-analyst-portfolio" element={<DSPortfolioPage />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
