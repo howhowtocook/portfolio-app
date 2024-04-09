@@ -1,0 +1,60 @@
+.portfolio h2:first-of-type {
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  font-weight: 400;
+}
+
+/* ProjectCard.css */
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+.project-card {
+  border: 2px solid #e8dfdf;
+  border-radius: 8px;
+  padding: 3rem;
+  margin-bottom: 20px;
+  width: 65%; /* Set desired width for the card */
+}
+
+.project-card a :hover {
+  transform: translateY(-7px);
+}
+
+.project-card h3 {
+  font-size: 1.3em;
+  margin-bottom: 5px;
+}
+
+.project-card p {
+  font-size: 0.8em;
+  margin-bottom: 10px;
+}
+
+.image-slider {
+  margin: 2rem;
+  width: 70%;
+}
+
+.image-slider img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.image-slider button {
+  margin-top: 0.4rem;
+  transform: translateY(-50%);
+  background-color: rgba(144, 141, 141, 0.5);
+  color: #fff;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.image-slider button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}

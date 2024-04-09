@@ -1,22 +1,33 @@
 body {
   margin: 0;
-  padding: 30px;
+  padding: 3rem;
   height: 110%;
   font-family: "Neue Montreal";
   font-weight: 400;
   font-size: 1.1rem;
 }
 
+#root {
+  display: flex;
+  flex-direction: row;
+}
+
 .frame {
+  width: 90vw;
+  height: 90wh;
   margin: 1rem;
+  margin-left: 0;
   padding: 3rem;
-  border: 4px double whitesmoke;
+  border: 0.5rem double whitesmoke;
 }
 
 i {
-  margin-right: 10px;
+  margin-right: 1rem;
 }
 
+.contact a :hover {
+  transform: translateY(-7px);
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -36,23 +47,22 @@ ul {
   margin-top: 40vh;
 }
 .about {
-  margin-top: 20vh;
-  margin-bottom: 10vh;
-  display: flex;
-  flex-direction: row;
-  align-items: end;
-  justify-content: space-between;
+  margin: 7rem 1rem;
+  margin-top: 10rem;
+  justify-content: center;
 }
 
 .about .text {
-  width: 30%;
-  min-width: 300px;
+  width: 50%;
+  min-width: 35rem;
 }
 
-img {
-  width: 12rem;
-  height: 16rem;
-  opacity: 0.3;
+.dark {
+  color: aliceblue;
+}
+
+.light {
+  color: black;
 }
 
 /* Define custom fonts */
@@ -110,4 +120,27 @@ nav {
   font-weight: 600;
   margin-left: -2rem;
   font-size: 0.8rem;
+}
+
+.theme {
+  position: absolute;
+  top: 2.5rem; /* Adjust the top position as needed */
+  right: 2.5rem; /* Adjust the right position as needed */
+  display: flex;
+  flex-direction: row; /* Arrange buttons vertically */
+  font-weight: 200;
+  writing-mode: vertical-rl;
+}
+
+.theme button {
+  margin-bottom: 10px; /* Add some space between buttons */
+  background-color: transparent; /* Set background color to transparent */
+  border: none; /* Remove border */
+  display: flex;
+  flex-direction: column; /* Arrange text vertically */
+  align-items: center; /* Center text horizontally */
+}
+
+.theme button:hover {
+  transform: translateX(-5px);
 }

@@ -1,10 +1,8 @@
 import React from "react";
-import sadImage from "../assets/images/happy.png"; // Importing the image
 
 const About = () => {
   return (
     <div className="about">
-      <img src={sadImage} alt="Happy Me" />
       <div className="text">
         <p>
           With a background in statistics, I've developed a passion for data

@@ -5,8 +5,8 @@ const Header = () => {
   return (
     <header>
       <div className="brand">
-        <h1>Linna Xiao</h1>
-        <p>Data Analyst & Web Developer</p>
+        <h1>LINNA XIAO</h1>
+        <p className="label">Data Analyst & Web Developer</p>
       </div>
       <nav>
         <ul>
