@@ -45,7 +45,7 @@ const App = () => {
   };
 
   return (
-    <Router>
+    <Router basename="/portfolio-app">
       <div className="theme">
         <button
           className={`${darkMode ? "dark" : "light"}`}
@@ -63,18 +63,10 @@ const App = () => {
       <div className={`frame ${darkMode ? "dark" : "light"}`}>
         <Header />
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route
-            exact
-            path="/web-dev-portfolio"
-            element={<WebDevPortfolioPage />}
-          />
-          <Route
-            exact
-            path="/data-analyst-portfolio"
-            element={<DSPortfolioPage />}
-          />
-          <Route exact path="/contact" element={<Contact />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/" element={<WebDevPortfolioPage />} />
+          <Route path="/data-analyst-portfolio" element={<DSPortfolioPage />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </Router>
